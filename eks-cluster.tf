@@ -20,22 +20,7 @@ module "eks" {
       additional_security_group_ids = [aws_security_group.worker_group_mgmt_one.id]
       asg_desired_capacity          = 3
     },
-#    {
-#      name                          = "worker-group-2"
-#      key_name                      = "terraformKeypair"
-#      instance_type                 = "t2.micro"
-#      additional_userdata           = "echo foo bar"
-#      additional_security_group_ids = [aws_security_group.worker_group_mgmt_two.id]
-#      asg_desired_capacity          = 1
-#    },
-#    {
-#      name                          = "worker-group-3"
-#      key_name                      = "terraformKeypair"
-#      instance_type                 = "t2.micro"
-#      additional_userdata           = "echo foo bar"
-#      additional_security_group_ids = [aws_security_group.worker_group_mgmt_three.id]
-#      asg_desired_capacity          = 1
-#    },
+
 
   ]
 }
